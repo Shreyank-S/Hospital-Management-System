@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Patient Admitting Info</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="#"><img src="Images/profile.jpeg">
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="admin.html">User</a></li>
+                        <li><a href="patient.html">Patients</a></li>
+                        <li><a href="doctor.html">Doctors</a></li>
+                        <li><a href="room.html">Rooms</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+        </nav>
+    </section>
+    <form class="signup-box">
+        <h1>Patient Admit Info</h1>
+        <label>Patient ID</label>
+        <input type="number" name="pid">
+
+        <label>Patient Name</label>
+        <input type="text" name="pname">
+
+        <label>Gender</label>
+        <label for="male">Male</label><br>
+        <input type="radio" name="male">
+        <label for="female">Female</label><br>
+        <input type="radio" name="female">
+
+        <label>Blood Group</label>
+        <input type="text" name="blood">
+
+        <label>Disease</label>
+        <input type="text" name="disease">
+
+        <label>Admit Date</label>
+        <input type="date" name="adate">
+
+        <label>Room No.</label>
+        <input type="number" name="room">
+
+        <label>Doctor ID</label>
+        <input type="number" name="did">
+
+        <label>Doctor Name</label>
+        <input type="text" name="dname">
+
+        <label>Remarks</label>
+        <textarea></textarea>
+
+        <center>
+            <button class="btn">Save</button>
+        </center>
+        <br>
+
+    </form>
+    <div class="footer">
+        <h4>Contact Us - 030 400 2456</h4>
+        <p>Copyright @ Hospital - All Rights Reserved</p>
+    </div>
+</body>
+
+</html>

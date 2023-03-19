@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Admin Login</title>
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function validateform() {
+           var uname = document.form.uname.value;
+           var pass = document.form.password.value;
+
+           if ( uname == null || uname == "") {
+               alert("UserName can't be blank");
+               return false;
+           } else if (pass.length < 8) {
+               alert("Password must be at least 8 characters long.");
+               return false;
+           }
+       }
+   </script> 
+
+</head>
+
+<body>
+
+    <body>
+        <section class="header">
+            <nav>
+                <a href="#"><img src="Images/profile.jpeg">
+                    <div class="nav-links">
+                        <ul>
+                            <li><a href="admin.html">User</a></li>
+                            <li><a href="#">Patients</a></li>
+                            <li><a href="#">Doctors</a></li>
+                            <li><a href="#">Rooms</a></li>
+                            <li><a href="#">Pharmacy</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+            </nav>
+        </section>
+        <form class="login-box" action="LoginServlet" method="POST" onsubmit="return validateform()">
+            <h1>LOGIN</h1>
+            <label>Username</label>
+            <input type="text" name="uname">
+
+            <label>Password</label>
+            <input type="password" name="pass">
+
+            <center>
+                <button class="btn">Login</button>
+                <button class="btn" type="reset"> Reset</button>
+            </center>
+            <br>
+        </form>
+        <p>If a new user<a href="signup.html"> Sign Up here</a></p>
+
+        <div class="footer">
+            <h4>Contact Us - 030 400 2456</h4>
+            <p>Copyright @ Hospital - All Rights Reserved</p>
+    </div>
+    </body>
+
+</html>
